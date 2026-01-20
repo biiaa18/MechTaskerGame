@@ -24,13 +24,7 @@ public class MechTasker : ModuleRules
 		PrivateDependencyModuleNames.AddRange(new string[] { });
 
 		PublicIncludePaths.AddRange(new string[] {
-			"MechTasker",
-			"MechTasker/Variant_Horror",
-			"MechTasker/Variant_Horror/UI",
-			"MechTasker/Variant_Shooter",
-			"MechTasker/Variant_Shooter/AI",
-			"MechTasker/Variant_Shooter/UI",
-			"MechTasker/Variant_Shooter/Weapons"
+			"MechTasker"
 		});
 
 		// Uncomment if you are using Slate UI
