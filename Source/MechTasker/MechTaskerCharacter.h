@@ -52,6 +52,9 @@ protected:
 public:
 	AMechTaskerCharacter();
 
+	UPROPERTY()
+	bool isArmModeOn=true;
+
 protected:
 
 	/** Called from Input Actions for movement input */

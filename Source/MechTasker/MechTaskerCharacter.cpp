@@ -92,8 +92,13 @@ void AMechTaskerCharacter::DoAim(float Yaw, float Pitch)
 	if (GetController())
 	{
 		// pass the rotation inputs
-		AddControllerYawInput(Yaw);
-		AddControllerPitchInput(Pitch);
+		if (!isArmModeOn) {
+			AddControllerYawInput(Yaw);
+			AddControllerPitchInput(Pitch);
+		}
+
+
+		
 	}
 }
 
