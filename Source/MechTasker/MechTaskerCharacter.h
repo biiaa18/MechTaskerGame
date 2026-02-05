@@ -49,8 +49,15 @@ protected:
 	UPROPERTY(EditAnywhere, Category ="Input")
 	class UInputAction* MouseLookAction;
 	
+	/** Mouse Look Input Action */
+	/*UPROPERTY(EditAnywhere, Category = "Input")
+	class UInputAction* GrabAction;*/
+
 public:
 	AMechTaskerCharacter();
+
+	UPROPERTY()
+	bool isArmModeOn=true;
 
 protected:
 
@@ -59,6 +66,9 @@ protected:
 
 	/** Called from Input Actions for looking input */
 	void LookInput(const FInputActionValue& Value);
+
+	//grab input
+	// void GrabInput(const FInputActionValue& Value);
 
 	/** Handles aim inputs from either controls or UI interfaces */
 	UFUNCTION(BlueprintCallable, Category="Input")

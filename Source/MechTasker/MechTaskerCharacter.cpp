@@ -59,6 +59,10 @@ void AMechTaskerCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInpu
 		// Looking/Aiming
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AMechTaskerCharacter::LookInput);
 		EnhancedInputComponent->BindAction(MouseLookAction, ETriggerEvent::Triggered, this, &AMechTaskerCharacter::LookInput);
+
+		/*GrabAction*/
+		//EnhancedInputComponent->BindAction(GrabAction, ETriggerEvent::Triggered, this, &AMechTaskerCharacter::GrabInput);
+
 	}
 	else
 	{
@@ -87,13 +91,23 @@ void AMechTaskerCharacter::LookInput(const FInputActionValue& Value)
 
 }
 
+//void AMechTaskerCharacter::GrabInput(const FInputActionValue& Value)
+//{
+//	bool BoolValue = Value.Get<bool>();
+//}
+
 void AMechTaskerCharacter::DoAim(float Yaw, float Pitch)
 {
 	if (GetController())
 	{
 		// pass the rotation inputs
-		AddControllerYawInput(Yaw);
-		AddControllerPitchInput(Pitch);
+		if (!isArmModeOn) {
+			AddControllerYawInput(Yaw);
+			AddControllerPitchInput(Pitch);
+		}
+
+
+		
 	}
 }
 
