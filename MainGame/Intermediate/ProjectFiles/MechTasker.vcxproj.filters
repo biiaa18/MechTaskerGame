@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\MechTasker.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\MechTasker.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\MechTaskerEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Source\MechTasker">
+      <UniqueIdentifier>{4D19A23B-1220-309A-988E-6E215B1A5439}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\MechTasker\MechTasker.Build.cs">
+      <Filter>Source\MechTasker</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\MechTasker\MechTasker.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\MechTasker.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

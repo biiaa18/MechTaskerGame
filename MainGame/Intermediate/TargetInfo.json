@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "MechTasker",
+			"Path": "..\\Source\\MechTasker.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "MechTaskerEditor",
+			"Path": "..\\Source\\MechTaskerEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
