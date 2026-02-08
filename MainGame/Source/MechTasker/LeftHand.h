@@ -1,0 +1,58 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+#pragma once
+
+#include "CoreMinimal.h"
+#include "GameFramework/Character.h"
+#include "LeftHand.generated.h"
+
+struct FInputActionValue;
+
+
+UCLASS()
+class MECHTASKER_API ALeftHand : public ACharacter
+{
+	GENERATED_BODY()
+
+public:
+	// Sets default values for this character's properties
+	ALeftHand();
+
+	UPROPERTY(EditAnywhere, Category = "Hand Components")
+	USkeletalMeshComponent* LeftHandMesh;
+
+	UPROPERTY(EditAnywhere, Category = "Hand Components")
+	UStaticMeshComponent* PlaceholderMesh;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Hand Attributes")
+	float speed = 200.f;
+
+
+	/// Input
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	class UInputMappingContext* LeftHandIMC;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	class UInputAction* MoveAction;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Input")
+	class UInputAction* GrabAction;
+
+	void Move(const FInputActionValue& Value);
+
+	UFUNCTION()
+	void Grab();
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:	
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
+	// Called to bind functionality to input
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+};

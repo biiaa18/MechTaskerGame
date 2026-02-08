@@ -258,6 +258,10 @@
     <None Include="..\..\MechTasker.uproject"/>
     <None Include="..\..\Source\MechTasker.Target.cs"/>
     <None Include="..\..\Source\MechTaskerEditor.Target.cs"/>
+    <ClCompile Include="..\..\Source\MechTasker\LeftHand.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\LeftHand.h"/>
     <None Include="..\..\Source\MechTasker\MechTasker.Build.cs"/>
     <ClCompile Include="..\..\Source\MechTasker\MechTasker.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>

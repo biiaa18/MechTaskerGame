@@ -31,6 +31,12 @@
     <Filter Include="Source\MechTasker">
       <UniqueIdentifier>{4D19A23B-1220-309A-988E-6E215B1A5439}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MechTasker\LeftHand.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\LeftHand.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
     <None Include="..\..\Source\MechTasker\MechTasker.Build.cs">
       <Filter>Source\MechTasker</Filter>
     </None>
