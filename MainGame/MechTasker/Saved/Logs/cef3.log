@@ -1,0 +1,12 @@
+[9040:6436:0210/111948.495:WARNING:chrome_main_delegate.cc(745)] This is Chrome version 128.0.6613.138 (not a warning)
+[9040:28076:0210/111948.769:ERROR:google_update_settings.cc(265)] Failed opening key Software\Chromium to set usagestats; result: 5
+[9040:6436:0210/111948.852:WARNING:account_consistency_mode_manager.cc(77)] Desktop Identity Consistency cannot be enabled as no OAuth client ID and client secret have been configured.
+[9040:6436:0210/111955.956:WARNING:external_registry_loader_win.cc(232)] Error observing HKLM: 5
+[9040:6436:0210/111956.416:ERROR:device_event_log_impl.cc(196)] [11:19:56.402] USB: usb_service_win.cc:105 SetupDiGetDeviceProperty({{A45C254E-DF1C-4EFD-8020-67D146A850E0}, 6}) failed: Elementet ble ikke funnet. (0x490)
+[9040:8920:0210/111957.120:WARNING:browser_info.cc(345)] Returning a speculative frame for [7,9]
+[9040:6436:0210/111957.174:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[9040:6436:0210/111957.174:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[9040:6436:0210/111957.174:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[9040:6436:0210/111957.174:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[9040:8920:0210/111957.219:WARNING:browser_info.cc(345)] Returning a speculative frame for [8,5]
+[9040:6436:0210/112106.582:WARNING:pref_notifier_impl.cc(41)] Pref observer for media_router.cast_allow_all_ips found at shutdown.

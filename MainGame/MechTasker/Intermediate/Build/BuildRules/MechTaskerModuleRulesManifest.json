@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UnrealProjects\\MechTasker\\MainGame\\MechTasker\\Source\\MechTasker\\MechTasker.Build.cs",
+		"C:\\UnrealProjects\\MechTasker\\MainGame\\MechTasker\\Source\\MechTasker.Target.cs",
+		"C:\\UnrealProjects\\MechTasker\\MainGame\\MechTasker\\Source\\MechTaskerEditor.Target.cs"
+	],
+	"EngineVersion": "5.7.1"
+}

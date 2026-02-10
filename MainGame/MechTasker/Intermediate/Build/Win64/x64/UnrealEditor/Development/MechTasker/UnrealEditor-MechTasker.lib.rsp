@@ -1,0 +1,13 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MechTasker.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:/UnrealProjects/MechTasker/MainGame/MechTasker/Intermediate/Build/Win64/x64/MechTaskerEditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.h.obj"
+"C:/UnrealProjects/MechTasker/MainGame/MechTasker/Intermediate/Build/Win64/x64/UnrealEditor/Development/MechTasker/MechTasker.cpp.obj"
+"C:/UnrealProjects/MechTasker/MainGame/MechTasker/Intermediate/Build/Win64/x64/UnrealEditor/Development/MechTasker/PerModuleInline.gen.cpp.obj"
+"C:/UnrealProjects/MechTasker/MainGame/MechTasker/Intermediate/Build/Win64/x64/UnrealEditor/Development/MechTasker/Default.rc2.res"
+/OUT:"C:/UnrealProjects/MechTasker/MainGame/MechTasker/Intermediate/Build/Win64/x64/UnrealEditor/Development/MechTasker/UnrealEditor-MechTasker.lib"

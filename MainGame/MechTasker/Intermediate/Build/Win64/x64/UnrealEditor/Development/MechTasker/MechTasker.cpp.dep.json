@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealprojects\\mechtasker\\maingame\\mechtasker\\source\\mechtasker\\mechtasker.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealprojects\\mechtasker\\maingame\\mechtasker\\intermediate\\build\\win64\\x64\\mechtaskereditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.h.pch",
+        "Includes": [
+            "c:\\unrealprojects\\mechtasker\\maingame\\mechtasker\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mechtasker\\definitions.mechtasker.h",
+            "c:\\unrealprojects\\mechtasker\\maingame\\mechtasker\\source\\mechtasker\\mechtasker.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
