@@ -31,6 +31,18 @@
     <Filter Include="Source\MechTasker">
       <UniqueIdentifier>{4D19A23B-1220-309A-988E-6E215B1A5439}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\MechTasker\ActiveLevelDataAsset.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\ActiveLevelDataAsset.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MechTasker\LevelData.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\LevelData.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
     <None Include="..\..\Source\MechTasker\MechTasker.Build.cs">
       <Filter>Source\MechTasker</Filter>
     </None>
@@ -40,10 +52,28 @@
     <ClInclude Include="..\..\Source\MechTasker\MechTasker.h">
       <Filter>Source\MechTasker</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\MechTasker\MyGameModeBase.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\MyGameModeBase.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\MechTasker\SaveGameClass.cpp">
       <Filter>Source\MechTasker</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\MechTasker\SaveGameClass.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MechTasker\StaticDataAsset.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\StaticDataAsset.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MechTasker\ui.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\ui.h">
       <Filter>Source\MechTasker</Filter>
     </ClInclude>
   </ItemGroup>

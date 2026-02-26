@@ -258,15 +258,35 @@
     <None Include="..\..\MechTasker.uproject"/>
     <None Include="..\..\Source\MechTasker.Target.cs"/>
     <None Include="..\..\Source\MechTaskerEditor.Target.cs"/>
+    <ClCompile Include="..\..\Source\MechTasker\ActiveLevelDataAsset.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\ActiveLevelDataAsset.h"/>
+    <ClCompile Include="..\..\Source\MechTasker\LevelData.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\LevelData.h"/>
     <None Include="..\..\Source\MechTasker\MechTasker.Build.cs"/>
     <ClCompile Include="..\..\Source\MechTasker\MechTasker.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\MechTasker\MechTasker.h"/>
+    <ClCompile Include="..\..\Source\MechTasker\MyGameModeBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\MyGameModeBase.h"/>
     <ClCompile Include="..\..\Source\MechTasker\SaveGameClass.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClInclude Include="..\..\Source\MechTasker\SaveGameClass.h"/>
+    <ClCompile Include="..\..\Source\MechTasker\StaticDataAsset.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\StaticDataAsset.h"/>
+    <ClCompile Include="..\..\Source\MechTasker\ui.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\ui.h"/>
   </ItemGroup>
   <PropertyGroup>
     <SourcePath></SourcePath>
