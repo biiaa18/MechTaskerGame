@@ -11,10 +11,14 @@
 /**
  * 
  */
+
+class ATruck;
 UCLASS()
 class MECHTASKER_API Uui : public UUserWidget
 {
 	GENERATED_BODY()
+
+	ATruck* truck;
 
 public:
 	//UPROPERTY(EditAnywhere, meta = (BindWidget))
@@ -30,6 +34,12 @@ public:
 	UPROPERTY(EditAnywhere, meta = (BindWidget))
 	class UTextBlock* AmountMoonlitDew;
 
+	UFUNCTION(BlueprintCallable)
+	void makeTruck();
+
+	void NativeTick(const FGeometry& geometry, float deltaTime) override;
+
+	//have bool for set visibility here and 
 
 	UFUNCTION(BlueprintCallable)
 	int setValue();

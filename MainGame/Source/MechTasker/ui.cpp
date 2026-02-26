@@ -2,6 +2,9 @@
 
 
 #include "ui.h"
+#include "Truck.h"
+#include "EngineUtils.h"
+
 void Uui::NativeConstruct()
 {
 	Super::NativeConstruct();
@@ -9,16 +12,42 @@ void Uui::NativeConstruct()
 	/*DropCrimsonBerries_btn->OnClicked.AddDynamic(this, &UPlayerWidgetHUD::OnClickCrimseBerries);
 	DropMoonlitDew_btn->OnClicked.AddDynamic(this, &UPlayerWidgetHUD::OnClickMoonlitDew);
 	DropDrakeHerb_btn->OnClicked.AddDynamic(this, &UPlayerWidgetHUD::OnClickDrakeHerb);*/
-	FString bpResource = "/Game/Blueprints/Level1.Level1";//object path for this EFFECT BP
-	UBlueprint* GeneratedBP = Cast<UBlueprint>(StaticLoadObject(UBlueprint::StaticClass(), NULL, *bpResource));
-	if (!GeneratedBP)
-		return;
-	UClass* BPClass=GeneratedBP->GeneratedClass;	
-	if (!BPClass)
-		return;
-	data = Cast<UStaticDataAsset>(BPClass->GetDefaultObject());
-	if (data)
-		setTotalPieces(data->TotalPieces);
+	//FString bpResource = "/Game/Blueprints/Level1.Level1";//object path for this EFFECT BP
+	//UBlueprint* GeneratedBP = Cast<UBlueprint>(StaticLoadObject(UBlueprint::StaticClass(), NULL, *bpResource));
+	//if (!GeneratedBP)
+	//	return;
+	//UClass* BPClass=GeneratedBP->GeneratedClass;	
+	//if (!BPClass)
+	//	return;
+	//data = Cast<UStaticDataAsset>(BPClass->GetDefaultObject());
+	//if (data)
+	//	setTotalPieces(data->TotalPieces);
+
+	/*for (TActorIterator<ATruck> It(GetWorld()); It; ++It) {
+		truck = *It;
+		break;
+	}*/
+}
+
+
+void Uui::makeTruck()
+{
+	for (TActorIterator<ATruck> It(GetWorld()); It; ++It) {
+		truck = *It;
+		break;
+	}
+}
+
+void Uui::NativeTick(const FGeometry& geometry, float deltaTime)
+{
+	Super::NativeTick(geometry, deltaTime);
+
+	if (truck) {
+		//UE_LOG(LogTemp, Warning, TEXT("SETTING OVERLAPPED"));
+		SetMoonlitDew(truck->getoverlapped());
+	}
+	
+
 }
 
 int Uui::setValue()
@@ -37,7 +66,11 @@ int Uui::setValue()
 		setTotalPieces(data->TotalPieces);
 	}
 
+	
+
 	return data->TotalPieces;
+
+	
 }
 
 void Uui::setTotalPieces(int totalPieceee)
@@ -45,7 +78,7 @@ void Uui::setTotalPieces(int totalPieceee)
 	totalPieces->SetText(FText::AsNumber(totalPieceee));
 }
 
-//void ui::SetMoonlitDew(int numberMoonlitDew)
-//{
-//	AmountMoonlitDew->SetText(FText::AsNumber(numberMoonlitDew));
-//}
+void Uui::SetMoonlitDew(int numberMoonlitDew)
+{
+	AmountMoonlitDew->SetText(FText::AsNumber(numberMoonlitDew));
+}

@@ -5,18 +5,21 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/BoxComponent.h"
-#include "Pickup.generated.h"
+#include "Truck.generated.h"
+
 
 UCLASS()
-class MECHTASKER_API APickup : public AActor
+class MECHTASKER_API ATruck : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	APickup();
+	ATruck();
+
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* CollisionBox;
+
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,5 +28,19 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	int overlappedActors=0;
+
+
+	UFUNCTION()
+	void OnOverlap(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 BodyIndex, bool bFromSweep, const FHitResult& sweepResult);
+
+
+	UFUNCTION()
+	void OnOverlapEnd(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 BodyIndex);
+
+
+	int getoverlapped() { return overlappedActors; }
+
 
 };

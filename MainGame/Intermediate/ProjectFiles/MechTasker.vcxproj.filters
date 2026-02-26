@@ -2,7 +2,6 @@
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <None Include="..\..\.gitignore" />
-    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -74,6 +73,12 @@
       <Filter>Source\MechTasker</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\MechTasker\StaticDataAsset.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\MechTasker\Truck.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\Truck.h">
       <Filter>Source\MechTasker</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\MechTasker\ui.cpp">
