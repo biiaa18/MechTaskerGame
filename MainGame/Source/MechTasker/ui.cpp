@@ -31,8 +31,11 @@ int Uui::setValue()
 
 	}
 	data = GeneratedBP;
-	if (data)
+
+	if (data) {
+		data->getTotalFromWorld(GetWorld());
 		setTotalPieces(data->TotalPieces);
+	}
 
 	return data->TotalPieces;
 }

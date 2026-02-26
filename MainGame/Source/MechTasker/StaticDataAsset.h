@@ -26,5 +26,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	bool bTotalPieces=true;
 
+	void getTotalFromWorld(UWorld* world);
 
 };

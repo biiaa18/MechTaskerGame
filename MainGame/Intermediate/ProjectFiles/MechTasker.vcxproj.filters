@@ -58,6 +58,12 @@
     <ClInclude Include="..\..\Source\MechTasker\MyGameModeBase.h">
       <Filter>Source\MechTasker</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\MechTasker\Pickup.cpp">
+      <Filter>Source\MechTasker</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\MechTasker\Pickup.h">
+      <Filter>Source\MechTasker</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\MechTasker\SaveGameClass.cpp">
       <Filter>Source\MechTasker</Filter>
     </ClCompile>
